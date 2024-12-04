@@ -26,5 +26,5 @@ This project is a Python recreation of the classic Flappy Bird game. The game ch
     ```bash
     python3.9 -m venv venv # Create a venv
     source venv/bin/activate # Activate the venv
-    pip install -r requirements.txt
+    pip install pygame
     ```
