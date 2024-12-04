@@ -1,0 +1,4 @@
+image.png
+venv/
+__pycache__/
+objects/__pycache__/

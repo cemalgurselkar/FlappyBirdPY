@@ -70,7 +70,8 @@ while running:
     for sprite in sprites:
         if type(sprite) is Column and sprite.is_passed():
             score.value += 1
-
+    if KeyboardInterrupt:
+        running = False
 
     pygame.display.flip()
     clock.tick(configs.FPS)
