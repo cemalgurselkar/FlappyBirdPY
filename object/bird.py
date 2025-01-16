@@ -5,6 +5,7 @@ import configs
 from object.column import Column
 from object.floor import Floor
 
+configs = configs.Config()
 class Bird(pygame.sprite.Sprite):
     def __init__(self,*groups):
         self._layer = Layer.PLAYER

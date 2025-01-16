@@ -1,12 +1,11 @@
 from typing import Any
-import pygame
-from pygame.sprite import Group
+from pygame.sprite import Sprite
 import assets
 import configs
 from layer import Layer
 
-
-class Background(pygame.sprite.Sprite):
+configs = configs.Config()
+class Background(Sprite):
     def __init__(self, index,*groups):
         self._layer = Layer.BACKGROUND
         self.image = assets.get_sprite("background")
@@ -16,6 +15,5 @@ class Background(pygame.sprite.Sprite):
     
     def update(self):
         self.rect.x -= 2 
-
         if self.rect.right <=0:
             self.rect.x = configs.SCREEN_WIDTH

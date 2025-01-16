@@ -1,15 +1,15 @@
 import configs
 import assets
 import pygame
-from object.background import Background
-from object.floor import Floor
-from object.column import Column
-from object.bird import Bird
-from object.gamestart_message import GameStartMessage
-from object.gameover_message import GameOverMessage
-from object.score import Score
+from object import Background
+from object import Floor
+from object import Column
+from object import Bird
+from object import GameStartMessage
+from object import GameOverMessage
+from object import Score
 
-
+configs = configs.Config()
 pygame.init()
 
 screen = pygame.display.set_mode((configs.SCREEN_WIDTH,configs.SCREEN_HEIGHT))

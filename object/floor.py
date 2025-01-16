@@ -4,6 +4,7 @@ import assets
 import configs
 from layer import Layer
 
+configs = configs.Config()
 class Floor(pygame.sprite.Sprite):
     def __init__(self,index,*groups):
         self._layer = Layer.FLOOR

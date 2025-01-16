@@ -3,6 +3,7 @@ import configs
 import assets
 from layer import Layer
 
+configs = configs.Config()
 class GameStartMessage(pygame.sprite.Sprite):
     def __init__(self,*groups):
         self._layer = Layer.UI

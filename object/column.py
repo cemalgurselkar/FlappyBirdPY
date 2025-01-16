@@ -4,7 +4,7 @@ import configs
 import random
 from layer import Layer
 
-
+configs = configs.Config()
 class Column(pygame.sprite.Sprite):
     def __init__(self, *groups):
         self._layer = Layer.OBSTACLE

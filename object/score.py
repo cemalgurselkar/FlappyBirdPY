@@ -4,7 +4,7 @@ from layer import Layer
 import configs
 import assets
 
-
+configs = configs.Config()
 class Score(pygame.sprite.Sprite):
     def __init__(self,*groups):
         self._layer = Layer.UI
